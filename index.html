@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center-div">
+      <h2 class="text-title">kalkulator</h2>
+      <input type="number" class="calculator-screen" id="screen" readonly />
+
+      <div class="key-container">
+        <button class="key" onclick="appendNumber('7')">7</button>
+        <button class="key" onclick="appendNumber('8')">8</button>
+        <button class="key" onclick="appendNumber('9')">9</button>
+        <button class="key operator" onclick="setOperator('+')">+</button>
+        <button class="key" onclick="appendNumber('4')">4</button>
+        <button class="key" onclick="appendNumber('5')">5</button>
+        <button class="key" onclick="appendNumber('6')">6</button>
+        <button class="key operator" onclick="setOperator('-')">-</button>
+        <button class="key" onclick="appendNumber('1')">1</button>
+        <button class="key" onclick="appendNumber('2')">2</button>
+        <button class="key" onclick="appendNumber('3')">3</button>
+        <button class="key operator" onclick="setOperator('*')">×</button>
+        <button class="key" onclick="clearScreen()">C</button>
+        <button class="key" onclick="appendNumber('0')">0</button>
+        <button class="key" onclick="calculate()">=</button>
+        <button class="key operator" onclick="setOperator('/')">÷</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
